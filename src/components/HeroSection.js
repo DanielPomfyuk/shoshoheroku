@@ -8,7 +8,9 @@ function HeroSection() {
     <div className='hero-container'>
         <img src="photo_2020-10-18_18-02-13.jpg"></img>
         <div className="flex-center">
-        <i class="fab fa-instagram icon-3d"> sho_sho_show_uzh</i>
+        <a href="https://www.instagram.com/sho_sho_show_uzh/">
+          <i class="fab fa-instagram icon-3d"> sho_sho_show_uzh</i>
+          </a>
         <i class="fas fa-phone-volume icon-3d"> +380 66 003 28 38</i>
         </div>
       {/* <video src='/videos/video-1.mp4' autoPlay loop muted />
