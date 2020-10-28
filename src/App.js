@@ -1,15 +1,12 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom" 
-import Home from "../src/components/pages/Home"
+import {BrowserRouter as Router} from "react-router-dom"
+import Home from "./pages"
 function App() {
   return (
     <React.Fragment>
       <Router>
-        <Switch>
-        <Route path='/' exact component={Home} />
-        </Switch>
+        <Home/>
       </Router>
     </React.Fragment>
   );
