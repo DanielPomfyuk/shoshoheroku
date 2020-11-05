@@ -8,8 +8,10 @@ import {
     NavItem,
     NavLinks,
     NavBtn,
-    NavBtnLink
+    NavBtnLink,
+    Logo
 } from "./NavbarElements"
+import logoImg from './poster.png'
 import {FaBars} from 'react-icons/fa'
 const Navbar = ({toggle}) => {
     return (
@@ -17,24 +19,30 @@ const Navbar = ({toggle}) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">
-                        ShoShoShow
+                        <Logo src={logoImg}/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="/photos" onClick={toggle}>Фото</NavLinks>
+                            <NavLinks to="/" onClick={toggle}>SHO?ШО?SHOW!-SHO ЦЕ ТАКЕ?</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/info" onClick={toggle}>Чому ми</NavLinks>
+                            <NavLinks to="/" onClick={toggle}>Наші фоточки</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/contact" onClick={toggle}>Контакти</NavLinks>
+                            <NavLinks to="/" onClick={toggle}>Замовити гру на свій EVENT</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="/" onClick={toggle}>Франчайзинг</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="/" onClick={toggle}>Контакти</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/registration">
+                        <NavBtnLink to="/">
                         реєстрація
                         </NavBtnLink>
                     </NavBtn>

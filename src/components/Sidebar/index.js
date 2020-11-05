@@ -17,8 +17,10 @@ const Sidebar = ({isOpen,toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="/photos">Фото</SidebarLink>
-                    <SidebarLink to="/info">Чому ми</SidebarLink>
+                    <SidebarLink to="/photos">SHO?ШО?SHOW!-SHO ЦЕ ТАКЕ?</SidebarLink>
+                    <SidebarLink to="/info">Наші фоточки</SidebarLink>
+                    <SidebarLink to="/contact">Замовити гру на свій EVENT</SidebarLink>
+                    <SidebarLink to="/contact">Франчайзинг</SidebarLink>
                     <SidebarLink to="/contact">Контакти</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
