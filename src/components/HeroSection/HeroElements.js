@@ -5,16 +5,17 @@ import {Link as LinkR} from "react-router-dom"
 export const InfoSection = styled.div`
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(${bgImg});
-  height: 90vh;
-  background-position: center;
-  color:#fff;
   background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color:#fff;
 `
 export const Container = styled.div`
+display:flex;
+  justify-content:center;
+  align-items:center;
   height: calc(100vh - 80px);
   max-height: 100%;
-  align-items:center;
-  justify-content:center;
   padding: 0rem calc((100vw - 1300px) / 2);
 `;
 
@@ -22,11 +23,11 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:center;
   height: 100vh;
   max-height: 100%;
   padding: 0 2rem;
   width: 100%;
-  color: transparent;
   text-transform: uppercase;
   line-height: 1;
   @media screen and (max-width: 650px) {
@@ -34,7 +35,7 @@ export const HeroContent = styled.div`
   }
   `
 export const LogoImg = styled.img`
-  width:50%;
+  width: min(500px,100%);
   @media screen and (max-width: 650px) {
     width: 100%;
   }
@@ -47,7 +48,7 @@ export const NavBtn = styled.nav`
     align-items: center;
     @media screen and (max-width: 960px){
         flex-direction:column;
-        justify-content:space-around;
+        justify-content:flex-end;
         align-items:center;
         width:100%;
         height:20%;
