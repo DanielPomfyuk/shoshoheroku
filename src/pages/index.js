@@ -3,19 +3,31 @@ import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar';
 import InfoSection from "../components/InfoPage"
-const Home = () => {
-    const [isOpen,setIsOpen] = useState(false)
-    const toggle = ()=>{
-        setIsOpen(!isOpen)
+import PhotoGallery from "../components/PhotoGallery";
+import Socials from "../components/Socials";
+import { render } from '@testing-library/react';
+class Home extends React.Component{
+    constructor(){
+        super()
+        this.state= {
+            isOpen:false,
+            scrollPosition:0
+        }
+        this.toggle = this.toggle.bind(this)
     }
-    return (
-        <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
-            <HeroSection/>
-            <InfoSection/>
-        </>
-    )
+    toggle(){
+        this.setState(prevState=>({ isOpen: !prevState.isOpen}))
+    }
+    render(){
+        return(<>
+        <Sidebar isOpen={this.state.isOpen} toggle={this.toggle}/>
+                <Navbar toggle={this.toggle}/>
+                <HeroSection/>
+                <InfoSection/>
+                <PhotoGallery scrollPosition={this.state.scrollPosition}/>
+                <Socials/>
+        </>)
+    }
 }
 
 export default Home
