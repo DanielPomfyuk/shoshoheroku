@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar';
 import InfoSection from "../components/InfoPage"
 import PhotoGallery from "../components/PhotoGallery";
 import Socials from "../components/Socials";
-import { render } from '@testing-library/react';
+import RegistrationForm from "../components/RegistrationForm"
 class Home extends React.Component{
     constructor(){
         super()
@@ -25,6 +25,7 @@ class Home extends React.Component{
                 <HeroSection/>
                 <InfoSection/>
                 <PhotoGallery scrollPosition={this.state.scrollPosition}/>
+                <RegistrationForm/>
                 <Socials/>
         </>)
     }

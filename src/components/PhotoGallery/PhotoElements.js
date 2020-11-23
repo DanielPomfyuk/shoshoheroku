@@ -26,7 +26,7 @@ const mymove = keyframes`
   }
 
   to {
-    transform: rotateY(45deg) translateX(-4000px);
+    transform: rotateY(45deg) translateX(-3000px);
   }
 `;
 export const Wall = styled.div`
