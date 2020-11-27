@@ -8,7 +8,7 @@ function Socials() {
 
     return (
         <>
-            <Networks>
+            <Networks id="contacts">
                 <Netbox>
                     <Icon><FontAwesomeIcon icon={faFacebook} /></Icon>
                     <Icon><FontAwesomeIcon icon={faInstagram} /></Icon>

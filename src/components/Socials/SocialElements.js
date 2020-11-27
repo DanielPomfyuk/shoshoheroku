@@ -15,8 +15,11 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ff6ec7;
-  color: #ff6ec7;  
+  border: 1px solid #12B6E2;
+  color: #12B6E2;  
+  box-shadow: 
+      0 0 100px 2px #02313D,
+      0.5rem 0.5rem 30px #12B6E2;
   &:after {
     position: absolute;
     top: -1rem;
@@ -30,10 +33,10 @@ position: relative;
 `
 export const Icon = styled(Link)`
      padding: 0.6rem 0.6rem;
-    color: #ff6ec7;
+    color: #12B6E2;
     transition: color 140ms ease;
     margin: 0 0.4rem;
     &:hover {
-      color: white;
+      color: #DFF7F6;
     }
 `

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router} from "react-router-dom"
+import {BrowserRouter as Router, Switch , Route} from "react-router-dom"
 import Home from "./pages"
 import {GlobalStyle} from "./GlobalStyles"
 function App() {
@@ -7,7 +7,9 @@ function App() {
     <React.Fragment>
       <Router>
         <GlobalStyle />
-        <Home/>
+        <Switch>
+          <Route path="/" component={Home} exact />
+        </Switch>
       </Router>
     </React.Fragment>
   );

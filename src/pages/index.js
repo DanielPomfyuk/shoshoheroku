@@ -11,7 +11,6 @@ class Home extends React.Component{
         super()
         this.state= {
             isOpen:false,
-            scrollPosition:0
         }
         this.toggle = this.toggle.bind(this)
     }
@@ -24,7 +23,7 @@ class Home extends React.Component{
                 <Navbar toggle={this.toggle}/>
                 <HeroSection/>
                 <InfoSection/>
-                <PhotoGallery scrollPosition={this.state.scrollPosition}/>
+                <PhotoGallery />
                 <RegistrationForm/>
                 <Socials/>
         </>)

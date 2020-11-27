@@ -3,15 +3,16 @@ import img from "./0093.jpg"
 
 
 export const InfoWrapper = styled.div`
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
-    url(${img});
-  height: 90vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),url(${img});
+  height: 100vh;
   background-position: center;
-  color:#fff;
   background-size: cover;
   display:flex;
   justify-content:center;
   align-items:center;
+  @media screen and (max-width: 1024px){
+        height:200vh;
+    }
 `
 export const Container = styled.div`
     width:100%;
@@ -25,12 +26,10 @@ export const Container = styled.div`
     }
 `
 export const IconsContainer = styled.div`
-    display:flex;
+    display:grid;
     width:40%;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
+    grid-template-columns:repeat(auto-fit,minmax(10rem,.5fr));
+
     @media screen and (max-width: 1024px){
         width:100%;
     }
@@ -38,11 +37,8 @@ export const IconsContainer = styled.div`
 export const Icon = styled.img`
     /* width:200px;
     height:150px; */
-    width:clamp(200px,100px,50%);
+    width:clamp(50%,200px,200px);
     padding:0 20px 20px;
-    @media screen and(max-width: 1024px){
-        width:60%;
-    }
 `
 export const TextWrapper = styled.div`
     width:60%;

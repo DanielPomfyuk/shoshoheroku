@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import {Link as LinkR} from "react-router-dom"
 import {Link as linkS} from "react-scroll"
 export const Nav = styled.nav`
-    background:#000;
+    background:black;
     height:80px;
-    // margin-top:-80px;
+    /* margin-top:-80px; */
     display:flex;
     justify-content: center;
     font-size: 1rem;

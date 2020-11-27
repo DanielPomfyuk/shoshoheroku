@@ -13,12 +13,18 @@ import {
 } from "./NavbarElements"
 import logoImg from './poster.png'
 import {FaBars} from 'react-icons/fa'
+import {animateScroll as scroll} from 'react-scroll'
+
 const Navbar = ({toggle}) => {
+
+    const toggleHome = ()=>{
+        scroll.scrollToTop();
+    }
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">
+                    <NavLogo to="/" onClick={toggleHome}>
                         <Logo src={logoImg}/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
@@ -26,23 +32,35 @@ const Navbar = ({toggle}) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="/" onClick={toggle}>SHO?ШО?SHOW!-SHO ЦЕ ТАКЕ?</NavLinks>
+                            <NavLinks to="info"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={0}
+                            activeClass='active' >SHO?ШО?SHOW!-SHO ЦЕ ТАКЕ?</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/" onClick={toggle}>Наші фоточки</NavLinks>
+                            <NavLinks to="photo" 
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={0}
+                            activeClass='active'>Наші фоточки</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/" onClick={toggle}>Замовити гру на свій EVENT</NavLinks>
+                            <NavLinks to="/" >Замовити гру на свій EVENT</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/" onClick={toggle}>Франчайзинг</NavLinks>
+                            <NavLinks to="/" >Франчайзинг</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/" onClick={toggle}>Контакти</NavLinks>
+                            <NavLinks to="contacts" >Контакти</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/">
+                        <NavBtnLink to="registration">
                         реєстрація
                         </NavBtnLink>
                     </NavBtn>
