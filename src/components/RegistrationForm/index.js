@@ -4,7 +4,6 @@ function RegistrationForm() {
     return (<>
     <Container id="registration">
         <FormContainer>
-
         <Form>
             <Title>Registration</Title>
             <Input placeholder="Назва команди"/>
