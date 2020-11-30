@@ -2,11 +2,12 @@ import styled from "styled-components"
 import bgImg from "./fon.jpg"
 export const Container = styled.div`
     width:100%;
-    height:50vh;
+    height:100vh;
     background-color:black;
     display:flex;
     align-items:center;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    justify-content:center;
+    background: radial-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
     url(${bgImg});
     background-size: cover;
     background-position:center;
@@ -14,24 +15,37 @@ export const Container = styled.div`
         justify-content:center;
     }
 `
-export const Form = styled.div`
-    background-color:black;
-    width: 500px;
-    height:60%;
-    display:flex;
-    margin-left:100px;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    border:2px solid #12B6E2;
+export const FormContainer = styled.div`
+  width:800px;
+  height:60%;
+  border:2px solid #12B6E2;
     box-shadow: 
       0 0 100px 2px #02313D,
       0.5rem 0.5rem 30px #12B6E2;
+  display:flex;
+  overflow:hidden;
+`
+export const Form = styled.div`
+    background-color:black;
+    width: 70%;
+    height:100%;
+    display:flex;
+    /* margin-left:100px; */
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
     @media screen and (max-width: 960px){
        width:100%;
        margin-left:0;
        height:100%;
     }
+`
+export const Svg = styled.svg`
+  width:30%;
+  height:100%;
+  z-index:999;
+  overflow:visible;
 `
 export const Select = styled.select`
   width: 50%;

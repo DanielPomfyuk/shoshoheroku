@@ -60,7 +60,7 @@ const Navbar = ({toggle}) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="registration">
+                        <NavBtnLink to="/registration">
                         реєстрація
                         </NavBtnLink>
                     </NavBtn>
