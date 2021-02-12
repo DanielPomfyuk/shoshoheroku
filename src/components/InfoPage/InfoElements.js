@@ -1,8 +1,8 @@
 import styled from  "styled-components"
 import img from "./0093.jpg"
 export const InfoWrapper = styled.div`
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),url(${img});
   height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),url(${img});
   background-position: center;
   background-size: cover;
   display:flex;
@@ -13,10 +13,11 @@ export const InfoWrapper = styled.div`
     }
 `
 export const Container = styled.div`
-    width:100%;
-    max-width:98rem;
+    width:80%;
+    height:100%;
     margin:auto;
     display:flex;
+    flex-direction:column;
     justify-content:flex-start;
     align-items:center;
     @media screen and (max-width: 1024px){
@@ -24,32 +25,35 @@ export const Container = styled.div`
     }
 `
 export const IconsContainer = styled.div`
-    display:grid;
-    width:40%;
-    grid-template-columns:repeat(auto-fit,minmax(10rem,.5fr));
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
     @media screen and (max-width: 1024px){
         width:100%;
     }
 `
 export const Icon = styled.img`
-    width:clamp(50%,200px,200px);
-    padding:0 20px 20px;
+    width:300px;
+    /* padding:0 20px 20px; */
 `
 export const TextWrapper = styled.div`
-    width:60%;
+    width:100%;
     padding:5vw;
     @media screen and (max-width: 1024px){
         width:100%;
     }
 `
 export const Text = styled.p`
-    text-align:justify;
+    text-align:center;
     font-size:clamp(1em,2vw,1.5em);
-    color:#FC7DC0;
+    color:#66D0EC;
 `
 export const TextTitle = styled.h1`
+    text-align:center;
     margin:0;
     padding:0;
     font-size:clamp(20px,5vw,50px);
-    color:#FC7DC0;
+    color:#66D0EC;
 `   

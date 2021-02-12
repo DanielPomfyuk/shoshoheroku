@@ -31,11 +31,11 @@ const InfoSection = () => {
                     <Icon src={icon1}/>
                     <Icon src={icon2}/>
                     <Icon src={icon3}/>
+                    <Icon src={icon8}/>
                     <Icon src={icon4}/>
                     <Icon src={icon5}/>
                     <Icon src={icon6}/>
                     <Icon src={icon7}/>
-                    <Icon src={icon8}/>
                 </IconsContainer>
             </Container>
         </InfoWrapper>
