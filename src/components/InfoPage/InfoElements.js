@@ -1,7 +1,5 @@
 import styled from  "styled-components"
 import img from "./0093.jpg"
-
-
 export const InfoWrapper = styled.div`
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),url(${img});
   height: 100vh;
@@ -29,14 +27,11 @@ export const IconsContainer = styled.div`
     display:grid;
     width:40%;
     grid-template-columns:repeat(auto-fit,minmax(10rem,.5fr));
-
     @media screen and (max-width: 1024px){
         width:100%;
     }
 `
 export const Icon = styled.img`
-    /* width:200px;
-    height:150px; */
     width:clamp(50%,200px,200px);
     padding:0 20px 20px;
 `

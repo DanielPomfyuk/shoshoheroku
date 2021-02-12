@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch , Route} from "react-router-dom"
 import Home from "./pages/Home.js"
-import RegistrationForm from "./components/RegistrationForm"
 import {GlobalStyle} from "./GlobalStyles"
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar';
@@ -24,7 +23,7 @@ toggle(){
         <Navbar toggle={this.toggle}/>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/registration" component={RegistrationForm}/>
+          <Route path="/"/>
         </Switch>
       </Router>
   );

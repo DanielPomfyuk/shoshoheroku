@@ -16,7 +16,7 @@ const HeroSection = () => {
           <HeroContent>
           <LogoImg src={logoImg}/>
           <NavBtn>
-                        <NavBtnLink to="/registration">РЕЄСТРАЦІЯ КОМАНДИ</NavBtnLink>
+                        <NavBtnLink to="/">РЕЄСТРАЦІЯ КОМАНДИ</NavBtnLink>
                         <NavBtnLink to="socials">ЗВ‘ЯЗАТИСЬ З НАМИ</NavBtnLink>
                     </NavBtn>
           </HeroContent>
