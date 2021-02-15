@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { MainContainer, Reflection, Wall ,Image,Frame,Row} from './PhotoElements';
 import images from "./images"
 

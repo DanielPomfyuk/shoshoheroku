@@ -1,5 +1,4 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch , Route} from "react-router-dom"
 import Home from "./pages/Home.js"
 import {GlobalStyle} from "./GlobalStyles"
 import Navbar from './components/Navbar'
@@ -16,16 +15,12 @@ toggle(){
     this.setState(prevState=>({ isOpen: !prevState.isOpen}))
 }
   render(){
-    return (
-      <Router>
+    return (<>
         <GlobalStyle />
         <Sidebar isOpen={this.state.isOpen} toggle={this.toggle}/>
         <Navbar toggle={this.toggle}/>
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/"/>
-        </Switch>
-      </Router>
+        <Home/>
+        </>
   );
   }
 }

@@ -24,7 +24,7 @@ const Sidebar = ({isOpen,toggle}) => {
                     <SidebarLink to="/contact">Контакти</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/">реєстрація</SidebarRoute>
+                    <SidebarRoute href="https://t.me/ShoShoShowBot">реєстрація</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

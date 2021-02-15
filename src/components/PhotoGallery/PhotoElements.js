@@ -1,22 +1,19 @@
 import styled,{keyframes} from "styled-components"
 
 export const MainContainer = styled.div`
-    background: black;
+  background: black;
   transform-style: preserve-3d;
   overflow: hidden;     
-    @media(min-width: 0px) {
-    perspective: 450px;
+  @media(min-width: 0px) {
+    perspective: 600px;
   }
-
-@media(min-width: 700px) {
-    perspective: 500px;
+  @media(min-width: 700px) {
+    perspective: 700px;
   }
-
-@media(min-width: 1200px) {
+  @media(min-width: 1200px) {
     perspective: 1000px;
   }
-
-@media(min-width: 1600px) {
+  @media(min-width: 1600px) {
     perspective: 2000px;
   }
 `
@@ -30,29 +27,29 @@ const mymove = keyframes`
   }
 `;
 export const Wall = styled.div`
-position: relative;
+  position: relative;
   transform-origin: left center;
   width: 100%;
   height: 100%;
-  animation: ${mymove} 60s infinite ;
+  animation: ${mymove} 120s infinite ;
 `
 export const Row = styled.div`
-    position: relative;
-    display: flex;
-    height: 250px;
-    margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  height: 250px;
+  margin-bottom: 10px;
 `
 export const Image = styled.img`
-      height: 100%;
-      margin: 5px;
+  height: 100%;
+  margin: 5px;
 `
 export const Frame = styled.div`
-      position: relative;
-      height: 100%;
+  position: relative;
+  height: 100%;
 `
 export const Reflection = styled.div`
-    position: absolute;
-    height: 100%;
-    transform: rotateX(180deg) translateY(-10px);
-    opacity: 0.25;
+  position: absolute;
+  height: 100%;
+  transform: rotateX(180deg) translateY(-10px);
+  opacity: 0.25;
 `

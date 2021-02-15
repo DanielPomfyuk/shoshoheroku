@@ -24,7 +24,7 @@ const Navbar = ({toggle}) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome}>
+                    <NavLogo href="/" onClick={toggleHome}>
                         <Logo src={logoImg}/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
@@ -50,17 +50,35 @@ const Navbar = ({toggle}) => {
                             activeClass='active'>Наші фоточки</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/" >Замовити гру на свій EVENT</NavLinks>
+                            <NavLinks to="contacts" 
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={0}
+                            activeClass='active'>Замовити гру на свій EVENT</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/" >Франчайзинг</NavLinks>
+                            <NavLinks to="contacts" 
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={0}
+                            activeClass='active'>Франчайзинг</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contacts" >Контакти</NavLinks>
+                            <NavLinks to="contacts" 
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={0}
+                            activeClass='active'>Контакти</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/">
+                        <NavBtnLink href="https://t.me/ShoShoShowBot">
                         реєстрація
                         </NavBtnLink>
                     </NavBtn>

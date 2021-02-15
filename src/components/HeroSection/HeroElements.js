@@ -1,6 +1,5 @@
 import styled from  "styled-components"
 import bgImg from './0046.jpg';
-import {Link as LinkR} from "react-router-dom"
 
 export const InfoSection = styled.div`
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -54,7 +53,7 @@ export const NavBtn = styled.nav`
         height:20%;
     }
 ` 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.a`
     border: 2px solid #FC7DC0;
     white-space: nowrap;
     padding: 10px 22px;

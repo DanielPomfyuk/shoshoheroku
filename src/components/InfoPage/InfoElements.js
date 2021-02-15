@@ -26,7 +26,7 @@ export const Container = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1023px){
         flex-direction:column;
         justify-content:flex-start;
     }
@@ -59,9 +59,12 @@ export const Text = styled.p`
 `
 export const TextTitle = styled.h1`
     text-align:center;
-    -webkit-text-stroke: 2px #0288C2;
     margin:0;
     padding:0;
     font-size:clamp(20px,5vw,50px);
-    color:white;
+    color:#0288C2;
+    @media screen and (min-width: 1024px){
+        color:white;
+        -webkit-text-stroke: 2px #0288C2;
+    }
 `   
