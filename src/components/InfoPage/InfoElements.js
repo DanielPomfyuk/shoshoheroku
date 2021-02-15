@@ -8,8 +8,14 @@ export const InfoWrapper = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-  @media screen and (max-width: 1024px){
-        height:200vh;
+  @media screen and (max-width: 650px){
+        height:270vh;
+    }
+  @media screen and (max-width: 450px){
+        height:280vh;
+    }
+  @media screen and (max-width: 350px){
+        height:300vh;
     }
 `
 export const Container = styled.div`
@@ -18,10 +24,11 @@ export const Container = styled.div`
     margin:auto;
     display:flex;
     flex-direction:column;
-    justify-content:flex-start;
+    justify-content:center;
     align-items:center;
     @media screen and (max-width: 1024px){
         flex-direction:column;
+        justify-content:flex-start;
     }
 `
 export const IconsContainer = styled.div`
@@ -36,24 +43,25 @@ export const IconsContainer = styled.div`
 `
 export const Icon = styled.img`
     width:300px;
-    /* padding:0 20px 20px; */
-`
-export const TextWrapper = styled.div`
-    width:100%;
-    padding:5vw;
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 500px){
         width:100%;
     }
 `
+export const TextWrapper = styled.div`
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+`
 export const Text = styled.p`
-    text-align:center;
+    text-align:justify;
     font-size:clamp(1em,2vw,1.5em);
-    color:#66D0EC;
+    color:white;
 `
 export const TextTitle = styled.h1`
     text-align:center;
+    -webkit-text-stroke: 2px #0288C2;
     margin:0;
     padding:0;
     font-size:clamp(20px,5vw,50px);
-    color:#66D0EC;
+    color:white;
 `   
