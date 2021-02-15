@@ -8,24 +8,24 @@ function Socials() {
 
     return (
         <>
-        <FooterContainer>
+        <FooterContainer >
             <InfoContainer>
                 <InfoBox>
                     <Title>Франчайзинг</Title>
                     <Info>Specifies that text is justified by adjusting the spacing between words, effectively creating additional word spacing. This is effectively a variation of the word-spacing property.</Info>
                 </InfoBox>
-            <Networks id="contacts">
-                <Netbox>
-                    <Icon><FontAwesomeIcon icon={faFacebook} /></Icon>
-                    <Icon><FontAwesomeIcon icon={faInstagram} /></Icon>
-                    <Icon><FontAwesomeIcon icon={faViber} /></Icon>
-                    <Icon><FontAwesomeIcon icon={faPhoneSquare} /></Icon>
-                </Netbox>
-            </Networks>
                 <InfoBox>
                     <Title>Замовити гру на свій EVENT</Title>
                     <Info>Specifies that text is justified by adjusting the spacing between words, effectively creating additional word spacing. This is effectively a variation of the word-spacing property.</Info>
                 </InfoBox>
+                <Networks id="contacts">
+                <Netbox>
+                    <Icon href="https://www.facebook.com/ShoShowGame"><FontAwesomeIcon icon={faFacebook} /></Icon>
+                    <Icon href="https://www.instagram.com/sho_sho_show_ua/"><FontAwesomeIcon icon={faInstagram} /></Icon>
+                    <Icon href="/"><FontAwesomeIcon icon={faViber} /></Icon>
+                    <Icon href="tel:+380660032838"><FontAwesomeIcon icon={faPhoneSquare} /></Icon>
+                </Netbox>
+            </Networks>
             </InfoContainer>
         </FooterContainer>
         </>
