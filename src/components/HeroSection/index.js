@@ -6,22 +6,20 @@ import {
     NavBtn,
     NavBtnLink,
     InfoSection,
-    Container,
+    HeroContainer,
     LogoImg
 }from "./HeroElements"
 const HeroSection = () => {
     return (<>
-    <InfoSection>
-      <Container>
+    <HeroContainer>
           <HeroContent>
           <LogoImg src={logoImg}/>
           <NavBtn>
                         <NavBtnLink href="https://t.me/ShoShoShowBot">РЕЄСТРАЦІЯ КОМАНДИ</NavBtnLink>
                         <NavBtnLink href="#contacts">ЗВ‘ЯЗАТИСЬ З НАМИ</NavBtnLink>
-                    </NavBtn>
+          </NavBtn>
           </HeroContent>
-      </Container>
-    </InfoSection>
+    </HeroContainer>
     </>)
 }
 

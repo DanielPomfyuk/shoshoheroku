@@ -1,5 +1,9 @@
 import React from 'react';
-import Home from "./pages/Home.js"
+import HeroSection from './components/HeroSection';
+import InfoSection from "./components/InfoPage"
+import PhotoGallery from "./components/PhotoGallery";
+import Socials from "./components/Socials";
+
 import {GlobalStyle} from "./GlobalStyles"
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar';
@@ -15,12 +19,15 @@ toggle(){
     this.setState(prevState=>({ isOpen: !prevState.isOpen}))
 }
   render(){
-    return (<>
+    return (<React.Fragment>
         <GlobalStyle />
         <Sidebar isOpen={this.state.isOpen} toggle={this.toggle}/>
         <Navbar toggle={this.toggle}/>
-        <Home/>
-        </>
+        <HeroSection/>
+        <InfoSection/>
+        <PhotoGallery />
+        <Socials/>
+        </React.Fragment>
   );
   }
 }
