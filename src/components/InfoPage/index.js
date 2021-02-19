@@ -23,11 +23,12 @@ const InfoSection = () => {
     return (
         <InfoWrapper id="info">
             <Container>
-                <TextWrapper>
+                {/* <TextWrapper>
                     <TextTitle>SHO?ШО?SHOW! - SHO ЦЕ ТАКЕ?</TextTitle>
                     <Text>{text}</Text>
-                </TextWrapper>
-                <IconsContainer>
+                </TextWrapper> */}
+                {/* <IconsContainer> */}
+                    <Icon src={icon7}/>
                     <Icon src={icon1}/>
                     <Icon src={icon2}/>
                     <Icon src={icon3}/>
@@ -35,8 +36,7 @@ const InfoSection = () => {
                     <Icon src={icon4}/>
                     <Icon src={icon5}/>
                     <Icon src={icon6}/>
-                    <Icon src={icon7}/>
-                </IconsContainer>
+                {/* </IconsContainer> */}
             </Container>
         </InfoWrapper>
     )
