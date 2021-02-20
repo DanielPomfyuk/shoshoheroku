@@ -1,15 +1,16 @@
 import styled from "styled-components"
 
-export const FooterContainer = styled.div`
+export const Footer = styled.div`
   width:100%;
   background:black;
   display:flex;
   justify-content:center;
   align-items:center;
 `
-export const InfoContainer = styled.div`
-  width:60%;
+export const Container = styled.div`
+  width:80%;
   display:flex;
+  flex-direction:column;
   justify-content:space-between;
   padding:20px;
   @media screen and (max-width: 800px){
@@ -23,9 +24,16 @@ export const InfoContainer = styled.div`
         width:100%;
   }
 `
+export const InfoWrapper = styled.div`
+  display:flex;
+  align-items:flex-start;
+  @media screen and (max-width: 1024px){
+    flex-direction:column;
+    align-items:center;
+  }
+`
 export const InfoBox = styled.div`
   width:35%;
-  /* border:1px solid #12B6E2; */
   padding:10px;
   display:flex;
   justify-content:center;
@@ -47,9 +55,11 @@ export const Info = styled.p`
   font-size:1.2rem;
   color:#0288C2;
 `
+
 export const Networks = styled.div`
   display: flex;
-  align-items:flex-end;
+  align-items:center;
+  justify-content:center;
   font-size:60px;
   @media screen and (max-width: 400px){
     font-size:50px;
